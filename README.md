@@ -1,2 +1,2 @@
 # notes-ptr-vector
-A note on inheritance, polymorphism, and using vectors of pointers in C++
+This is a supplementary code for [a blog post](https://liamst19.github.io/c++/2019/06/18/unique-pointers.html).
