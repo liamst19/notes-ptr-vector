@@ -291,7 +291,7 @@ int main(int argc, char* argv[])
   //    "pure virtual method called"
   drawing.render_ptrs();
 
-  // To get around this, the pointers must be unique pointers
+  // Best workaround is to use unique pointers, which prevents memory leaks.
   drawing.draw_u_ptrs();
   drawing.render_u_ptrs();
 }
