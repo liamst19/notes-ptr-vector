@@ -232,16 +232,16 @@ public:
   void draw_u_ptrs(){
     _drawing_u_ptrs.clear();
     // directly pushing back to vector
-    _drawing_u_ptrs.push_back(std::unique_ptr<Point>{new Point{180, 185}});
+    _drawing_u_ptrs.push_back(std::make_unique<Point>(180, 185));
 
     // allegedly, emplace_back assures that the pointer is moved, and not copied
-    _drawing_u_ptrs.emplace_back(std::unique_ptr<Point>{new Point{10, 15}});
+    _drawing_u_ptrs.emplace_back(std::make_unique<Point>(10, 15));
     _drawing_u_ptrs.emplace_back(getPointPtr(35, 22));
 
     // Method call which uses std::move()
-    add_element_u_ptr(std::unique_ptr<Point>{new Point{1, 5}});
-    add_element_u_ptr(std::unique_ptr<Line>{new Line{2, 3, 724, 1125}});
-    add_element_u_ptr(std::unique_ptr<Rectangle>{new Rectangle{2225, 4523, 1124, 1125}});
+    add_element_u_ptr(std::make_unique<Point>(1, 5));
+    add_element_u_ptr(std::make_unique<Line>(2, 3, 724, 1125));
+    add_element_u_ptr(std::make_unique<Rectangle>(2225, 4523, 1124, 1125));
   }
 
 private:
