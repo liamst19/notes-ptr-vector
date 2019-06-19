@@ -110,7 +110,7 @@ public:
   }
   
   // --------------------------------------------------
-  // This throws an compilation error
+  // This throws a compilation error
   //
   // Rendering from collection of DrawingElement objects
   // void render(){
