@@ -81,7 +81,7 @@ public:
   }
 
   // --------------------------------------------------
-  /* !! This will throw an compilation error: 
+  /* !! This will throw a compilation error: 
      
      "cannot declare parameter 'element' to be of
       abstract type 'DrawingElement'"
